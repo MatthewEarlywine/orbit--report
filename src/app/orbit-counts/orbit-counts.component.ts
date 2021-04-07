@@ -16,8 +16,8 @@ export class OrbitCountsComponent implements OnInit {
 
   orbitCount(array, element): number{
     let count = 0;
-    for (let i = 0; i <= array.length; i++){
-        if (array[i].includes(element.toLowerCase()) === true){
+    for (let i = 0; i < array.length; i++){
+        if (array[i].type.toLowerCase() === element.toLowerCase()){
             count++;
             }
         }
